@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <title>Document</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap");
+
+        body {
+          font-family: "Montserrat", sans-serif;
+          margin: 0px;
+        }
+
+        .header {
+            position: fixed;
+            z-index: 1;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0px 30px;
+            background-color: #F5F5FC;
+        }
+
+        .navlinks {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+            width: 30%;
+        }
+
+        .logo p {
+            font-weight: 700;
+        }
+
+        
+
+        .signup {
+            cursor: pointer;
+            background-color: #FF6B00;
+            padding: 0px 20px;
+            color: white;
+            border-radius: 10px;
+            transition: box-shadow 0.2s, transform 0.2s ease-in-out;
+
+        }
+
+        .signup:hover {
+            box-shadow: 0 0 20px rgba(0,0,0,0.4);
+            transform: scale(1.03);
+        }
+        .signup p {
+            margin: 10px;
+            padding: 10px 10px;
+        }
+
+        .hero {
+            display: flex;
+            background-color: #F5F5FC;
+            height: 110vh;
+        }
+
+        .heroimg img {
+            /* transform: rotate(100deg); */
+            height: 400px;
+            margin-top: 30px;
+        }
+
+        .heroimg {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+        }
+
+        .herotext {
+            margin: 0px 50px 0px 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .discount {
+            display: flex;
+            align-items: center;
+            background-color: #F5E7E4;
+            padding: 0px 30px;
+            border-radius: 12px;
+            width: 80%;
+        }
+
+        .discount p {
+            color: #FF6B00;
+        }
+
+        .discount2 {
+            background-color: #FF6B00;
+            padding: 0px 20px;
+            margin-right: 30px;
+            border-radius: 10px;
+        }
+
+        .discount2 p {
+            margin: 10px 0px;
+            color: #fff !important;
+        }
+
+        .heroh1 {
+            font-size: 30px;
+            width: 80%;
+        }
+
+        .heroh1food {
+            color: #FF6B00;
+        }
+
+        .header a {
+            text-decoration: none;
+            margin-right: 40px;
+        }
+
+        .logo {
+            color: black;
+        }
+
+        .below {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .below .order {
+            color: #FF6B00;
+        }
+
+        .companies {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: #fff;
+            box-shadow: 0 0 20px rgba(0,0,0,0.4);
+            width: 150vh;
+            border-radius: 20px;
+            padding: 20px 0px;
+        }
+
+        .middle {
+            display: flex;
+            justify-content: center;
+            position: relative;
+            
+            margin-top: -2.1%;
+            margin-bottom: -2.1%;
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        
+        <a href="./delivery.html"><div class="logo"><p>SpeedEats</p></div></a>
+        <div class="navlinks">
+            <p>Browse</p>
+            <p>Order</p>
+            <p>Delivery</p>
+            <p>Community</p>
+        </div>
+        <a href="https://google.com"><div class="signup"><p>Signup</p></div></a>
+    </div>
+
+    <div class="hero">
+        <div class="heroimg"><img src="./Assets/pizza.png" alt=""></div>
+        <div class="herotext">
+            <div class="discount">
+                <div class="discount2"><p>New Menu</p></div>
+                <p>Get 20% discount on new purchases </p>
+            </div>
+            <div class="heroh1">
+                <h1>Fastest & Cheapest <span class="heroh1food">Food</span> is in Your Hand</h1>
+            </div>
+            <div class="herop"></div>
+        </div>
+    </div>
+
+    <div class="middle">
+        <div class="companies">
+            <img src="./Assets/mcdonalds.png" alt="McDonalds" height="90px" width="120px">
+            <img src="./Assets/pizza-hut.png" alt="Pizza Hut" height="110px" width="120px">
+            <img style="opacity: calc(60%);" src="./Assets/burger-king.png" alt="Burger King" height="110px" width="120px">
+            <img src="./Assets/kfc.png" alt="KFC" height="120px" width="120px">
+        </div>
+    </div>
+
+    <div class="below">
+        <h1><span class="Order">Order</span> in just 30 minutes</h1>
+        <p>By clicking on three steps</p>
+        
+    </div>
+</body>
+</html>
