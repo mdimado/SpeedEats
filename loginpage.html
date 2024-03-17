@@ -11,18 +11,54 @@
             display: inline-flex;
             align-items: center;
         }
+        body {
+            font-family: 'Lato', sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        html {
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+        }
 
         .bg {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-image: url('./assets/fast-food-pic.avif');
+          background-size: cover;
+          animation: scrollBackground 40s linear infinite;
+        }
+
+        @keyframes scrollBackground {
+          from {
+            background-position: top; 
+          }
+          to {
+            background-position: bottom; 
+          }
+        }
+
+        /*.bg {
             background-image: url(./assets/fast-food-pic.avif);
             height: 100%;
             width: 100%;
-            /* filter: blur(2px); */
+            /* filter: blur(2px);
             position: fixed;
             background-size: cover;
             z-index: -1;
             left: 0;
             top: 0;
-        }
+        }*/
 
         .login {
             background-color: darkgrey;
@@ -33,14 +69,7 @@
             
         }
 
-        body {
-            font-family: 'Lato', sans-serif;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
+
 
         button {
             cursor: pointer;
@@ -68,7 +97,7 @@
             <br>
             <br>
     
-            <button type="submit" formaction="./Homepage.html">Login</button>
+            <button type="submit" formaction="./homepage.html">Login</button>
             <br>
 
 

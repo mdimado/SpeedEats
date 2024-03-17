@@ -34,11 +34,13 @@
             width: 30%;
         }
 
+        .logo {
+            color: black;
+        }
+
         .logo p {
             font-weight: 700;
         }
-
-        
 
         .signup {
             cursor: pointer;
@@ -59,14 +61,25 @@
             padding: 10px 10px;
         }
 
+        .header a {
+            text-decoration: none;
+            margin-right: 40px;
+        }
+
+
+
+
+
         .hero {
             display: flex;
-            background-color: #F5F5FC;
+            justify-content: center;
+            /* background-color: #F5F5FC; */
             height: 110vh;
         }
 
-        .heroimg img {
+        .heroimg > * {
             /* transform: rotate(100deg); */
+
             height: 400px;
             margin-top: 30px;
         }
@@ -76,7 +89,22 @@
             flex-direction: column;
             justify-content: center;
             align-content: center;
+
         }
+
+        
+
+        .heroh1 {
+            font-size: 30px;
+            width: 70%;
+        }
+
+
+
+        .heroh1food {
+            color: #FF6B00;
+        }
+
 
         .herotext {
             margin: 0px 50px 0px 30px;
@@ -85,6 +113,24 @@
             justify-content: center;
             align-items: center;
         }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         .discount {
             display: flex;
@@ -111,30 +157,18 @@
             color: #fff !important;
         }
 
-        .heroh1 {
-            font-size: 30px;
-            width: 80%;
-        }
 
-        .heroh1food {
-            color: #FF6B00;
-        }
 
-        .header a {
-            text-decoration: none;
-            margin-right: 40px;
-        }
 
-        .logo {
-            color: black;
-        }
 
         .below {
             display: flex;
+            margin-top: -10%;
             flex-direction: column;
             align-items: center;
             justify-content: center;
             height: 100vh;
+            background-color: #F5F5FC;
         }
 
         .below .order {
@@ -162,30 +196,57 @@
 
         }
 
+
+
+
+        .footer {
+            margin: 0px 5%;
+        }
+
+        footer {
+                display: flex;
+                justify-content: space-between;
+        }
+
+        .ficons,.fright {
+            display: inherit;
+            justify-content: space-evenly;
+            
+        }
+
+        .ficons > * {
+            margin: auto 15%;
+        }
+
+        .fright > * {
+            margin: auto 3%;
+            text-decoration: none;
+            color: black;
+        }
     </style>
 </head>
 <body>
     <div class="header">
         
-        <a href="./delivery.html"><div class="logo"><p>SpeedEats</p></div></a>
+        <a href="./homepage.html"><div class="logo"><p>SpeedEats</p></div></a>
         <div class="navlinks">
             <p>Browse</p>
             <p>Order</p>
             <p>Delivery</p>
             <p>Community</p>
         </div>
-        <a href="./login_page.html"><div class="signup"><p>Sign In</p></div></a>
+        <a href="./loginpage.html"><div class="signup"><p>Sign In</p></div></a>
     </div>
 
     <div class="hero">
-        <div class="heroimg"><img src="./Assets/pizza.png" alt=""></div>
+        <div class="heroimg"><script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script><lottie-player src="https://lottie.host/03e68b48-d7af-477e-9f71-d58bc2ac6bb0/stGYq2HCsr.json" background="transparent" speed="1" style="width: 450px; height: 450px; opacity: 90%; " loop autoplay direction="1" mode="normal"></lottie-player></div>
         <div class="herotext">
             <div class="discount">
                 <div class="discount2"><p>New Menu</p></div>
                 <p>Get 20% discount on new purchases </p>
             </div>
             <div class="heroh1">
-                <h1>Fastest & Cheapest <span class="heroh1food">Food</span> is in Your Hand</h1>
+                <h1>Fastest & Cheapest <span class="heroh1food">Food</span> is in Your Hands</h1>
             </div>
             <div class="herop"></div>
         </div>
@@ -204,6 +265,26 @@
         <h1><span class="Order">Order</span> in just 30 minutes</h1>
         <p>By clicking on three steps</p>
         
+    </div>
+
+    <div class="footer">
+        <hr>
+        <footer>
+            <p>© 2022 SpeedEats, Inc</p>
+            <div class="ficons">
+                <p>tw</p>
+                <p>ins</p>
+                <p>fb</p>
+            </div>
+            
+            <div class="fright">
+                <p>Home</p>
+                <p>Features</p>
+                <p>Pricing</p>
+                <p>FAQ's</p>
+                <a href="./aboutus.html">About</a>
+            </div>
+        </footer>
     </div>
 </body>
 </html>
